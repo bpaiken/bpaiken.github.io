@@ -12,7 +12,37 @@
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+
+
+    <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+		<script type="text/javascript" src="flappyBird.js"></script>
+		
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  </head>
+  <body>
+  
+  <canvas id="myCanvas" width="768" height="1024">
+    browser does not support canvas
+  </canvas>
+
+  <aside class="social-links">
+    <a href="https://www.github.com/bpaiken">
+      <i class="fa fa-github fa-4x" aria-hidden="true"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/brian-aiken-14a19057/">
+      <i class="fa fa-linkedin-square fa-4x" aria-hidden="true"></i>
+
+    </a>
+    <a href="mailto:bpaiken570@gmail.com" id="email">
+      <i class="fa fa-envelope fa-4x" aria-hidden="true"></i>
+
+    </a>
+  </aside>
+
+  </body>
+</html>
+
 	</head>
 	<body id="top">
 
@@ -32,18 +62,19 @@
 				<!-- One -->
 					<section id="one">
 						<header class="major">
-							<!-- <h2>Ipsum lorem dolor aliquam ante commodo<br />
-							magna sed accumsan arcu neque.</h2> -->
+							<h2>Ipsum lorem dolor aliquam ante commodo<br />
+							magna sed accumsan arcu neque.</h2>
 						</header>
-						<p>
-							I am a software developer and engineer experienced with Ruby on Rails, JavaScript and React.js. I've always been excited about building things.  As a child, I would immerse myself in meticuluousy crafted worlds built entirely of legos.  As I grew older, that same exciement has evolved into an engineering degree and a passion for solving complex problems. 
-
-							<!-- I am always looking for more opportunities to work on exciting challenges. -->
-						</p>
+						<p>Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.</p>
 						<ul class="actions">
 							<li><a href="#" class="button">Learn More</a></li>
 						</ul>
 					</section>
+
+
+
+
+
 
 				<!-- Two -->
 					<section id="two">
@@ -64,7 +95,7 @@
 								<p>FlappyBird is a side scroller where you attempt to navigate a flappy bird through pipes.</p>
 							</article>
 							<article class="6u 12u$(xsmall) work-item">
-								<a href="images/jDOM.png" class="image fit thumb"><img src="images/jDOM.png" alt="" height="250"/></a>
+								<a href="images/jDom.png" class="image fit thumb"><img src="images/jDom.png" alt="" height="250"/></a>
 								<h3>jDOM</h3>
 								<p>jDom is an approachable JavaScript library providing straightforward methods for DOM manipulation and HTTP requests.</p>
 							</article>
@@ -74,8 +105,7 @@
 						</ul> -->
 					</section>
 
-
-					 <section id="three">
+					<!-- <section id="skills">
 						<h2>I've Worked With...</h2>
 								<div class="box alt">
 									<div class="row 50% uniform">
@@ -89,39 +119,42 @@
 										<i class="devicon-postgresql-plain-wordmark colored"></i>
 										<i class="devicon-css3-plain-wordmark colored"></i>
 										<i class="devicon-git-plain-wordmark colored"></i>
+										<i class="devicon-google-plain-wordmark colored"></i>
 										<i class="devicon-sass-original colored"></i>
 										<i class="devicon-trello-plain-wordmark colored"></i>
 										<i class="devicon-webpack-plain-wordmark colored"></i>
-										<i class="devicon-ubuntu-plain-wordmark colored"></i>
-										<i class="devicon-jquery-plain-wordmark colored"></i>
+										<i class="devicon-slack-plain-wordmark colored"></i>
 									</div>
 								</div>
-					</section> 
+					</section> -->
 
-				<!-- four -->
-					<section id="four">
+
+				<!-- Three -->
+					<section id="three">
 						<h2>Get In Touch</h2>
-						<p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p>
 						<div class="row">
 							<div class="8u 12u$(small)">
-								<form method="post" action="#">
+								<form method="POST" action="http://formspree.io/bpaiken570@gmail.com">
 									<div class="row uniform 50%">
-										<div class="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
-										<div class="6u$ 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
+										<div class="6u 12u$(xsmall)">
+											<input type="text" name="name" id="name" placeholder="Name" />
+										</div>
+										<div class="6u$ 12u$(xsmall)">
+											<input type="email" name="_replyto" id="email" placeholder="Email" />
+										</div>
 										<div class="12u$"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
 									</div>
 								</form>
 								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
+									<li><input type="submit" value="Send" /></li>
 								</ul>
 							</div>
 							<div class="4u$ 12u$(small)">
 								<ul class="labeled-icons">
 									<li>
 										<h3 class="icon fa-home"><span class="label">Address</span></h3>
-										641 St Johns Place, Apt 2<br />
+										641 St Johns Place, Apt 2.<br />
 										Brooklyn, NY 11216<br />
-										United States
 									</li>
 									<li>
 										<h3 class="icon fa-mobile"><span class="label">Phone</span></h3>
@@ -129,16 +162,16 @@
 									</li>
 									<li>
 										<h3 class="icon fa-envelope-o"><span class="label">Email</span></h3>
-										<a href="#">hello@untitled.tld</a>
+										<a href="#">bpaiken570@gmail.com</a>
 									</li>
 								</ul>
 							</div>
 						</div>
 					</section>
 
-				<!-- Five -->
+				<!-- Four -->
 
-					<section id="five">
+					<section id="four">
 						<h2>Elements</h2>
 
 						<section>
@@ -214,7 +247,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 										<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
 										<li><a href="#" class="icon fa-tumblr"><span class="label">Tumblr</span></a></li>
 									</ul>
-								</div>
+								</div><div class="row">
 							</div>
 							<h5>Actions</h5>
 							<ul class="actions">
