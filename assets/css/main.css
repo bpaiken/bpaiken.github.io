@@ -2480,7 +2480,7 @@
 		-ms-justify-content: space-between;
 		justify-content: space-between;
 		background-color: #1f1815;
-		background-attachment: scroll,								fixed;
+		background-attachment: scroll, fixed;
 		background-image: url("images/overlay.png"), url("../../images/nasa.jpg");
 		background-position: top left,							top left;
 		background-repeat: repeat,								no-repeat;
@@ -3128,4 +3128,13 @@
 
 	i {
 		font-size: 4rem;
+	}
+
+	.project-links {
+		margin-right: 2px; 
+	}
+
+	.project-header {
+		display: inline-block;
+    margin-right: 10px;
 	}
