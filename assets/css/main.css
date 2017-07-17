@@ -1566,7 +1566,7 @@
 		}
 
 	body, input, select, textarea {
-		color: #a2a2a2;
+		color: #3b3b3b;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 16pt;
 		font-weight: 400;
@@ -1579,18 +1579,18 @@
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		border-bottom: dotted 1px;
-		color: #49bf9d;
+		color: #3f51b5;
 		text-decoration: none;
 	}
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #49bf9d !important;
+			color: #a4b0ef !important;
 			text-decoration: none;
 		}
 
 	strong, b {
-		color: #787878;
+		color: #3f51b5;
 		font-weight: 400;
 	}
 
@@ -3137,4 +3137,8 @@
 	.project-header {
 		display: inline-block;
     margin-right: 10px;
+	}
+
+	.textarea {
+		margin-bottom: 20px;
 	}
